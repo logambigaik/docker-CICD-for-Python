@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: python-docker-CICD-for-Python
+  IMAGE_NAME: docker-CICD-Python
 
 jobs:
   # Run tests.
@@ -33,6 +33,8 @@ jobs:
             docker-compose --file docker-compose.test.yml run sut
           else
             docker build . --file python-dcoker/Dockerfile
+            # docker build . --file python-dcoker/Dockerfile --tag my-image-name:$(date +%s)
+
           fi
 
   # Push image to GitHub Packages.
