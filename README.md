@@ -27,19 +27,24 @@
    
       # syntax=docker/dockerfile:1
 
-FROM python:3.8-slim-buster
+FROM python:slim
 
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY ..
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
     
     
 # Run the image as container
+
+        docker run --name python-docker -p 5000:5000 -d python-docker:latest
+
+![image](https://user-images.githubusercontent.com/54719289/116995391-ec727b00-acd1-11eb-8e26-499b1759d832.png)
+
 
 # Develop your app
 
