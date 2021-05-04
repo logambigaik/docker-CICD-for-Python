@@ -1,4 +1,3 @@
-# Article: https://medium.com/rockedscience/docker-ci-cd-pipeline-with-github-actions-6d4cd1731030
 name: Build and push Docker image upon release
 
 on:
@@ -10,16 +9,17 @@ jobs:
   push_to_registry:
     name: Build and push Docker image to Docker Hub
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
 
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v1 # Info: https://github.com/docker/build-push-action/tree/releases/v1#tags
+        uses: VaultVulp/gp-docker-action@1.1.8 # Info: https://github.com/docker/build-push-action/tree/releases/v1#tags
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
           repository: ${{ secrets.DOCKERHUB_REPOSITORY }}
-          tag_with_ref: true # Info: https://github.com/docker/build-push-action/tree/releases/v1#tag_with_ref
-          tag_with_sha: true # Info: https://github.com/docker/build-push-action/tree/releases/v1#tag_with_sha
-          tags: latest
+	        image-name: docker-cicd-python
+	        dockerfile: Dockerfile
