@@ -43,7 +43,7 @@
 
 
    >> With mysql:
-   >>  Create Voluem and network
+   >>  Create Volume and network
         
         docker volume create mysql
         docker volume create mysql_config
