@@ -93,4 +93,12 @@
         
 # Configure CI/CD
 
+ ![image](https://user-images.githubusercontent.com/54719289/117037361-4be68000-acfe-11eb-829a-a08d34160d2a.png)
+![image](https://user-images.githubusercontent.com/54719289/117037419-5b65c900-acfe-11eb-9f0c-ed48bb42ea2f.png)
+![image](https://user-images.githubusercontent.com/54719289/117037489-70daf300-acfe-11eb-810e-ac15060149a1.png)
+![image](https://user-images.githubusercontent.com/54719289/117037862-e34bd300-acfe-11eb-9c0f-94fd77f11b14.png)
+
+![image](https://user-images.githubusercontent.com/54719289/117037902-ee9efe80-acfe-11eb-9005-ab440aeecad6.png)
+
+
 # Deploy your app
