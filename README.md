@@ -100,5 +100,13 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/117037902-ee9efe80-acfe-11eb-9005-ab440aeecad6.png)
 
+>> Under ACtion create workflow and select Docker-CI
+![image](https://user-images.githubusercontent.com/54719289/117042378-ce257300-ad03-11eb-8c7a-1d6e9d50e3a3.png)
+![image](https://user-images.githubusercontent.com/54719289/117042429-e09fac80-ad03-11eb-9a7c-8e1d022e3394.png)
+
+![image](https://user-images.githubusercontent.com/54719289/117042212-93bbd600-ad03-11eb-8ca9-9d5fdfe45ae4.png)
 
 # Deploy your app
+
+![image](https://user-images.githubusercontent.com/54719289/117046388-8bb26500-ad08-11eb-88f7-0f9eb61cfb63.png)
+
