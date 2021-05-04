@@ -64,7 +64,6 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}    
        
       - name: Push image
-        uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
