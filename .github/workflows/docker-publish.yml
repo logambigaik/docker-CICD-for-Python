@@ -18,8 +18,6 @@ jobs:
       - name: Push to Docker Hub
         uses: VaultVulp/gp-docker-action@1.1.8 # Info: https://github.com/docker/build-push-action/tree/releases/v1#tags
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
-          repository: ${{ secrets.DOCKERHUB_REPOSITORY }}
-	        image-name: docker-cicd-python
-	        dockerfile: Dockerfile
+          github-token: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
+          image-name: docker-cicd-python
+	  dockerfile: Dockerfile
