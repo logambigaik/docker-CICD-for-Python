@@ -20,4 +20,3 @@ jobs:
         with:
           github-token: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
           image-name: docker-cicd-python
-	  
